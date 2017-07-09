@@ -2,7 +2,7 @@ from employee import Employee
 
 class Teacher(Employee):
 	def __init__(self,name,age,country,salary,specialty):
-		Employee.__init__(self,name,age,country,salary)
+		super(Teacher, self).__init__(name,age,country,salary)
 		self.specialty=specialty
 
 	def get_specialty(self):
